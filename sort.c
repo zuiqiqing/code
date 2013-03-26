@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+/* input  an array 
+ *
+ */
 void inputarray(int *p,int N)
 {
 	int i;
@@ -14,7 +16,9 @@ void inputarray(int *p,int N)
 
 }
 
-
+/* sort the array 
+ *
+ */
 void sort(int *p,int N)
 {
 	int i,j,*test;
@@ -28,6 +32,9 @@ void sort(int *p,int N)
 		
 }
 
+/* print the sorted array
+ *
+ */
 void printarray(int *p,int N)
 {
 	int i;
@@ -35,6 +42,7 @@ void printarray(int *p,int N)
 		printf("  %d",*(p+i));
 	printf("\n");
 }
+
 
 int main(void)
 {
