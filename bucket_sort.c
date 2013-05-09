@@ -1,3 +1,18 @@
+/*
+ * 桶排序  时间复杂度：O(N+N*logN-N*logM)
+ * 伪代码：
+ * BUCKET-SORT(A)：
+ *  n = length[A]
+ *  let B[0..n-1] be a new array
+ *  for i=0 to n-1
+ *		make B[i] an empty list
+ *	for i=1 to n
+ *		insert A[i] into B[nA[i]]
+ *	for i=0 to n-1
+ *		sort list B[i] with insertion sort
+ *	concatenate the lists B[0],B[1],...,B[n-1] together in orger
+ *
+ *
 #include <stdlib.h>
 #include <stdio.h>
 #define N 200000
